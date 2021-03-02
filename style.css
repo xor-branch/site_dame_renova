@@ -1,0 +1,363 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0 ;
+    padding: 0;
+}
+
+:root{
+    --color1:#ADD981;
+    --color2:#FFFFFFDF;
+}
+
+div.cover{
+    position: relative;
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+/*HEDER*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 20px;
+    position: absolute;
+}
+header img{
+    width: 150px;
+}
+
+/*MENU*/
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+}
+
+header li{
+    list-style: none;
+    margin: 20px;
+}
+header a{
+   color: white;
+   text-decoration: none;  
+}
+
+/*LANDING - TITRE DU HEADER ET SCROL*/
+
+div.landing-text {
+    margin-left: 50px;
+}
+
+.landing-text h2{
+    position: absolute;
+    top:100px;
+    color: white;
+    font-family: 'Abril FatFace';
+    font-weight: 600;
+    font-size: 50px;
+    width: 300px;
+}
+
+.landing-text p{
+    position: absolute;
+    top:35px;
+    right: 20px;
+}
+
+.scrool{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+/*SECTION SERVICES*/
+
+section.services{
+    margin: 30px 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.service-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-icon{
+    font-size: 50px;
+    color: #ADD981;
+}
+
+div.service-items{
+    text-align: center;
+    width: 200px;
+    font-weight: 600;
+}
+
+/*SECTION BEST SELER */
+
+.section{
+    margin: 50px 100px;
+}
+
+.section-titre{
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-titre::before{
+    content: "";
+    background-color: var(--color1);
+    height: 7px;
+    width: 50px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.best-plantes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plante-box{
+    min-width: 250px;
+    height: 500px;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+}
+
+
+div.plante1{
+    background: url(images/nos_meilleures_ventes/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+div.plante2{
+    background: url(images/nos_meilleures_ventes/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+div.plante3{
+    background: url(images/nos_meilleures_ventes/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+div.plante4{
+    background: url(images/nos_meilleures_ventes/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.plante-details{
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 20px;
+    background-color:var(--color2);
+    width: 100%;
+}
+
+p.plante-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+.plante-price{
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 3px;
+    color: var(--color1);
+}
+
+/*Nos plantes*/
+
+div.plantes-grid{
+    display: grid;
+    min-height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,400px);
+}
+
+div.grid-box{
+    margin: 5px;
+    position: relative;
+}
+
+div.plante-grid1{
+    background: url(images/nos_plantes/1.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+div.plante-grid2{
+    background: url(images/nos_plantes/2.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3/5;
+}
+div.plante-grid3{
+    background: url(images/nos_plantes/3.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3/5;
+}
+div.plante-grid4{
+    background: url(images/nos_plantes/4.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 3/4;
+}
+div.plante-grid5{
+    background: url(images/nos_plantes/5.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+div.plante-grid6{
+    background: url(images/nos_plantes/6.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 3/5;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    font-weight: 600;
+}
+.contactez-nous {
+    color: white;
+    text-decoration: none;
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media only screen and (max-width: 767px){
+    header img{
+        width: 100px;
+    }
+
+    .cover h2{
+        font-size: 50px;
+    }
+
+    section.services{
+        margin: 30px 10px;
+    }
+
+    
+    .delivery-icon{
+        font-size: 35px;
+        color: #ADD981;
+    }
+    
+    div.service-items{
+        text-align: center;
+        width: 200px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .section{
+        margin: 50px 10px;
+    }
+
+    .section-titre{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+   
+    .plante-box{
+        min-width: 250px;
+        height: 400px;
+        flex: 1;
+        margin: 5px;
+        position: relative;
+    }
+    
+    div.plante-grid1{
+        background: url(images/nos_plantes/1.jpg);
+        background-size: cover;
+        background-position: center;
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    
+    div.plante-grid2{
+        grid-column: 1/3;
+        grid-row: 2/2;
+    }
+    div.plante-grid3{
+        grid-column: 3/5;
+        grid-row: 2/2;
+    }
+    div.plante-grid4{
+        grid-row: 3/4;
+    }
+    div.plante-grid5{
+        grid-column: 2/4;
+        grid-row: 3/5;
+    }
+    div.plante-grid6{
+        grid-row: 3/5;
+    }
+    .landing-text p{
+        position: absolute;
+        top:385px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        font-size: 24px;
+    }
+
+    header nav li{
+       margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    header nav{
+        font-size: 12px;
+    }
+
+}
