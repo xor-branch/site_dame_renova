@@ -103,7 +103,7 @@ section a{
     color: black;
 }
 
-div.service-items{
+.service-items{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +114,7 @@ div.service-items{
     color: #ADD981;
 }
 
-div.service-items{
+.service-items {
     text-align: center;
     width: 200px;
     font-weight: 600;
@@ -156,22 +156,22 @@ div.service-items{
 }
 
 
-div.plante1{
+.plante1{
     background: url(images/nos_meilleures_ventes/1.jpg);
     background-size: cover;
     background-position: center;
 }
-div.plante2{
+.plante2{
     background: url(images/nos_meilleures_ventes/2.jpg);
     background-size: cover;
     background-position: center;
 }
-div.plante3{
+.plante3{
     background: url(images/nos_meilleures_ventes/3.jpg);
     background-size: cover;
     background-position: center;
 }
-div.plante4{
+.plante4{
     background: url(images/nos_meilleures_ventes/4.jpg);
     background-size: cover;
     background-position: center;
