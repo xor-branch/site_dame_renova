@@ -98,6 +98,11 @@ section.services{
     justify-content: space-evenly;
 }
 
+section a{
+    text-decoration: none;
+    color: black;
+}
+
 div.service-items{
     display: flex;
     flex-direction: column;
